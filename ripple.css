@@ -1,0 +1,81 @@
+  
+body{
+    margin: 0;
+    padding: 0;
+    background: #3498db
+}
+
+.container{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%,-50%) rotateX(70deg);
+}
+
+.ripple{
+    position: fixed;
+    margin-right:300px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: ripple 6s linear infinite;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.r2{
+    animation-delay: 0.8s;
+  
+}
+
+.r3{
+    animation-delay: 1.6s;
+    
+}
+
+.r4{
+    animation-delay: 2.4s;
+
+}
+
+.r5{
+    animation-delay: 3.2s;
+    
+}
+
+.r6{
+    animation-delay:4.0s;
+    
+}
+.r7{
+    animation-delay:4.8s;
+    
+}
+.r8{
+    animation-delay:5.6s;
+    
+}
+.r9{
+    animation-delay:6.4s;
+    
+}
+.r10{
+    animation-delay:7.2s;
+    
+}
+
+
+@keyframes ripple{
+    from{
+        border: 4px solid #0400ff;
+        background: #0896f5;
+    }
+    to{
+        border: 0px solid #8e44ad;
+        background: #2a96ddfd;
+        width: 1000px;
+        height: 1600px;
+        top: 20px;
+        opacity: 0;
+    }
+}
